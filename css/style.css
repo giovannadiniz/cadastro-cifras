@@ -13,13 +13,18 @@ div{
     color: white;
     border-radius: 15px;
 }
-.input{
-
+.input,
+select{
     padding: 15px;
     border: none;
     outline: none;
     font-size: 15px;
     width: 89%;
+}
+
+select {
+    width: 100%;
+    background-color: #FFF;
 }
 
 .button{

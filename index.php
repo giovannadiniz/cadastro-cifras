@@ -1,3 +1,8 @@
+<?php
+include_once "conexao.php";
+include_once "genero.php";
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -21,7 +26,17 @@
             <input class="input" type="text" name="musica"><br><br>
 
             Gênero Musical:<br>
-            <input class="input" type="text" name="genero"><br><br>
+            <!-- <input class="input" type="text" name="genero"><br><br> -->
+
+            <select name="genero" id="">
+                <?php
+                    foreach ($generos as $genero): 
+                        ?>
+                    <option value="<?= $genero['genero']; ?>"><?= $genero['genero']; ?></option>
+                <?php
+                    endforeach;
+                ?>
+            </select><br><br>
             
             <input class="button" type="submit" name="btn_salvar" value="Salvar">
             </form>
