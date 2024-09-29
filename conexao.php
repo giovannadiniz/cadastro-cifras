@@ -1,5 +1,5 @@
 <?php
-  $conexao = mysqli_connect('localhost', 'gabriel', '', 'bd_cifras');
+  $conexao = mysqli_connect('localhost', 'root', '', 'bd_cifras');
 
 // Code DB - uft-8
 mysqli_set_charset($conexao, "utf8");
